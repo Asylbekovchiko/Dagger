@@ -46,7 +46,7 @@ class NetworkModule{
     }
 
     @Provides
-//    @Singleton
+    @Singleton
     internal fun getApiUser(retrofit: Retrofit): ApiUser {
         return retrofit.create(ApiUser::class.java)
     }
